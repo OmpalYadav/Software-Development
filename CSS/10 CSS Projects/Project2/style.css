@@ -1,0 +1,33 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #1E1F25;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-border {
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5d6c, #ce4993, #6a0d83);
+    padding: 2px;
+    border-radius: 50px;
+
+}
+.button{
+    background: #000;
+    border: none;
+    color: #cbcbcb;
+    padding: 1rem 1.5em;
+    font-family: inherit;
+    letter-spacing: .1em;
+   border-radius: 50px;
+
+}
+.button-border:hover .button {
+    color: #fff;
+    padding: 1.1em 1.6em;
+}

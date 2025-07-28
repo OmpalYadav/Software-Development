@@ -1,0 +1,12 @@
+.CSS{
+    color: rgb(155, 127, 255);
+}
+
+a:hover{
+    background-color: black;
+    color: blueviolet;
+}
+
+p{
+color: aqua;
+}

@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: OmpalFont;
+    src: url(./font/Fortune.otf);
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'OmpalFont','Times New Roman';
+    font-size: 54px;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.Hero{
+    width: 50%;
+}
+
+body{
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

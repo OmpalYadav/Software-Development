@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+
+.link:link:link{
+    color: rgb(255, 38, 0);
+}
+.Visited:visited{
+    color: rgb(255, 208, 0);
+}
+.hover:hover{
+    color: blueviolet;
+}
+.Active:active{
+    color: brown;
+}

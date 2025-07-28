@@ -1,0 +1,26 @@
+ol {
+    margin-left: -40px;
+    margin-top: -20px;
+    list-style-position: inside;
+  }
+  
+  p{
+    color: red;
+  }
+
+  .Myclass{
+
+    font-size: 20px;
+}
+
+  #ID{
+    color: green;
+  }
+
+li[draggable="true"]{
+    color: blue;
+}
+
+*{
+    text-align: center;
+}

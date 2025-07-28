@@ -1,0 +1,32 @@
+.BOX {
+    /* we can write them individually too */
+    /* border-top: 15px solid black;
+    border-bottom: 20px dotted blue;
+    border-left: 15px double blueviolet;
+    border-right: 10px ridge brown; */
+
+    width: 500px;
+    height: 500px;
+    background-color: #5e9de9;
+    /* border-top-style: double; */
+
+    /*? Now, further we can go more deeper with each individual values. */
+    /* border-top-style: dashed;
+    border-top-width: 40px;
+    border-top-color: blue; */ 
+
+    /* write each property individual 
+    border-width: 15px;
+    border-style: solid;
+    border-color: #003180;
+
+    /* border radius */
+    /* border-radius: 100px; */
+
+     /* Creating Custom Radius for Each Corner:   */
+    /* top-left | top-right | bottom-right | bottom-left */
+    /* border-radius: 15px 500px 10px 500px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+
+    /* border-radius: 100% 0% 100% 0% / 36% 60% 40% 64% ; */ 
+}

@@ -1,0 +1,26 @@
+img {
+width: 200px; height: 200px;   
+}
+
+.Color-title{
+    font-size: normal;
+}
+
+#Rojo{
+    color: red;
+}
+
+#Azul{
+    color: blue;
+}
+
+#Anaranjado{
+    color: orange;
+}
+
+#Verde{
+color: green;
+}
+#Amarillo{
+    color: yellow;
+}

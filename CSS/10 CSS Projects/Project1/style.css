@@ -1,0 +1,19 @@
+p{
+    line-height: 1.5em;
+}
+
+.post{
+background: #e8eaed;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.spoiler{
+    background: black;
+    color: black;
+    transition: all .5s ease-in;
+}
+.spoiler:hover{
+    background: initial;
+    color: initial;
+}

@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+
+h1{
+    text-decoration: underline;
+    text-decoration-color: red;
+    /* text-decoration-thickness: 10px; */
+    /* text-decoration-style: wavy; */
+    /* text-decoration: none; */
+}
+
+h2{
+  text-transform: lowercase;
+  text-transform: capitalize;
+  text-transform: none;
+}
+
+p{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(253, 0, 0);
+}
+
+h1{
+    text-shadow: 10px 2px 10px rgb(255, 0, 0);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Care Page</title>
+</head>
+
+<body>
+    <nav style="text-align: center;"><a href="./index.html"
+            style="background-color: rgb(232, 220, 241);">AutoMob-Mechanic</a></nav><br><br>
+    <table style="width: 100%">
+        <tr style="background-color: rgb(114, 84, 39); color: rgb(255, 255, 255);">
+            <td style="text-align: center;"><a href="./index.html" style="color: #fff;">Home</a></td>
+            <td style="text-align: center;"><a href="./services.html" style="color: #fff;">Services</a></td>
+            <td style="text-align: center;"><a href="./booking.html" style="color: #fff;">Booking </a></td>
+            <td style="text-align: center;"><a href="mailto:contact@automob.co.in"
+                    style="color: #fff;">contact@automob.co.in</a></td>
+            <td style="text-align: center;"><a href="./care-service.html" style="color: #fff;">Care Services</a></td>
+            <td style="text-align: center;"><a href="./repair-service.html" style="color: #fff;">Repair Services</a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Book Your Service</h1>
+    <form action="/">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="Phone">Phone Number:</label>
+        <select name="countryCode" id="countryCode" required>
+            <option value="" disabled selected>Code</option>
+            <option value="+213">+213</option>
+            <option value="+91">+91</option>
+            <option value="+244">+244</option>
+            <option value="+61">+61</option>
+        </select>
+        <input type="tel" id="Phone" name="Phone"><br>
+        <label for="Select Service">Select Service:</label>
+        <select name="Select Service" id="Select Service" required>
+            <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+            <option value="Body Repair Service">Body Repair Service</option>
+            <option value="Car Care Service">Car Care Service</option>
+        </select><br>
+        <label for="Car Make">Car Make:</label>
+        <input list="datalist" name="carMake" id="car Make">
+        <datalist id="datalist">
+                <option value="Mahindra">
+                <option value="Honda">
+                <option value="Hyundai">
+                <option value="Ford">
+                <option value="Toyota">
+        </datalist><br>
+        <label for="Car Model">Car Model:</label>
+        <input type="text" name="Car Model" id="Car Model"><br>
+        <label for="Fuel Type">Fuel Type:</label>
+        <label> <input type="radio" name="fuelType" value="Petrol" required>Petrol</label>
+        <label> <input type="radio" name="fuelType" value="Petrol" required>Diesel</label>
+        <label> <input type="radio" name="fuelType" value="Petrol" required>LPG</label>
+        <label> <input type="radio" name="fuelType" value="Petrol" required>Others</label><br>
+        <label for="Kilometers Ran">Kilometers Ran:</label>
+        <input type="number" name="Kilometers Ran" id="Kilometers Ran" value="Kilometers Ran">
+    </form><br>
+    <button><a href="./appointment.html">Schedule an Appointment</a></button>
+
+    <hr>
+    <footer style="text-align: center;">Copyright © 2020 AutoMob-Mechanic. All Rights Reserved.</footer>
+</body>
+
+</html>

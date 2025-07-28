@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.H1 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.Section-One {
+    border: 1px solid black;
+    padding: 50px;
+    width: 800px;
+    background-color: #9e9c0c;
+    color: white;
+    /* margin: 200px 200px 200px 200px;
+    /*? Three Values: margin: top right-left bottom; */
+    /* margin: 50px 30px 60px; */
+    /* Two Values: margin: top-bottom right-left; */
+    /* margin: 100px 400px;  */
+    margin: 50px;
+    box-sizing: content-box;
+
+}
+
+
+.Section-Two{
+    border: 1px solid black;
+    padding: 50px;
+    width: 600px;
+    background-color: blueviolet;
+    color: aqua;
+    margin: 10px;
+}

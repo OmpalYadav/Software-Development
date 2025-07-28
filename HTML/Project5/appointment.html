@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an Appointment</title>
+</head>
+<body>
+    <body>
+    <nav style="text-align: center;"><a href="./index.html"
+            style="background-color: rgb(232, 220, 241);">AutoMob-Mechanic</a></nav><br><br>
+    <table style="width: 100%">
+        <tr style="background-color: rgb(114, 84, 39); color: rgb(255, 255, 255);">
+            <td style="text-align: center;"><a href="./index.html" style="color: #fff;">Home</a></td>
+            <td style="text-align: center;"><a href="./services.html" style="color: #fff;">Services</a></td>
+            <td style="text-align: center;"><a href="./booking.html" style="color: #fff;">Booking </a></td>
+            <td style="text-align: center;"><a href="mailto:contact@automob.co.in"
+                    style="color: #fff;">contact@automob.co.in</a></td>
+            <td style="text-align: center;"><a href="./care-service.html" style="color: #fff;">Care Services</a></td>
+            <td style="text-align: center;"><a href="./repair-service.html" style="color: #fff;">Repair Services</a>
+            </td>
+        </tr>
+    </table>
+    <h1>Schedule an Appointment</h1>
+    <form action="/">
+    <label for="Schedule an Appointment">Schedule an Appointment</label>
+    <input type="date" value="Schedule an Appointment" name="Schedule an Appointment"><br>
+    <label for="Address">Address</label>
+    <textarea name="Address" id="Address" style="width: 200px; height: 200px;"></textarea><br>
+    <label for="City">City:</label>
+        <input list="datalist" name="City" id="City">
+        <datalist id="datalist">
+                <option value="Dehli">
+                <option value="Noida">
+                <option value="Agra">
+                <option value="Jalesar">
+        </datalist><br>
+         <label for="State">State:</label>
+        <input list="datalist" name="State" id="State">
+        <datalist id="datalist">
+                <option value="Uttar Pradesh">
+                <option value="Dehli">
+                <option value="Mumbai">
+                <option value="Pune">
+        </datalist><br>
+        <label for="Send Notification">Send Notification:</label>
+        <label> <input type="checkbox" name="Send Notification" id="Send Notification">Email</label>
+                <label> <input type="checkbox" name="Send Notification" id="Send Notification">SMS</label>
+                </form><br>
+        <button><a href="./booking-success.html">Book</a></button>
+    </body>
+</html>

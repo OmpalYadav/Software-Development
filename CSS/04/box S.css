@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Urbanist";
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #191717;
+    display: grid;
+    place-items: center;
+  }
+  
+  .shadow {
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    background-color: rgb(174, 68, 90);
+    border-radius: 50%;
+  
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  
+    /*? box shadow here  */
+    box-shadow: -2px -1px 10px 5px burlywood;
+  }
+  
