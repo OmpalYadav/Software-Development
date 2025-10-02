@@ -36,7 +36,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 html {
@@ -65,12 +65,14 @@ body {
   font-size: 48px;
   color: #f4f3f1;
   text-align: center;
+  margin: 50px 30px 60px;
 }
 
 p {
   line-height: 1.6;
   letter-spacing: 1px;
   font-size: 18px;
+  margin: 50px 30px 60px;
 }
 
 /* box model css  */

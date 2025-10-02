@@ -46,6 +46,10 @@ html {
 #main-heading {
   font-size: 64px;
   color: #1e1403;
+  border: 2px dotted blue;
+  padding: 2px;
+  text-align: center;
+  margin-left: 80px;
 }
 
 p {
@@ -53,6 +57,9 @@ p {
   letter-spacing: 1px;
   word-spacing: 2px;
   line-height: 1.5;
+  border: 2px solid red;
+  color: #1e1403;
+  padding: 4rem;
 }
 
 .section-border {

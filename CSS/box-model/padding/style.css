@@ -55,8 +55,10 @@ body {
 }
 
 #main-heading {
-  padding: 4rem 0;
+  padding: 5rem 8rem 2rem 15rem;
   color: #1e1403;
+  border: 2px solid black;
+  text-align: center;
 }
 
 p {
@@ -64,6 +66,7 @@ p {
   letter-spacing: 1px;
   font-size: 18px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid black;
 }
 
 /* box model css  */
