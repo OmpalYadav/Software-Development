@@ -1,0 +1,49 @@
+   /* ---------------- BASIC STYLES ---------------- */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    /* Grouping selector */
+    h1, h2, p {
+      margin-bottom: 12px;
+      color: rgb(145, 211, 84);
+    }
+
+    /* Descendant selector */
+    .container p {
+      color: rgb(0, 0, 0);
+    }
+
+    /* Child selector */
+    .container > p {
+      color: rgb(184, 34, 34); /* sirf direct child par */
+    }
+
+    /* Chaining selector */
+    div.box.special {
+      background: rgb(143, 146, 135);
+      padding: 10px;
+    }
+
+    /* ID selector - more specific */
+    #unique-text {
+      color: rgb(94, 28, 12);
+    }
+
+    /* Inline style ki wajah se ye override ho jaayega */
+    #unique-text {
+      color: rgb(2, 2, 70) !important; /* !important sabko override karega */
+    }
+
+    /* Combinator: adjacent sibling */
+    h2 + p {
+      font-weight: bold;
+      color: orange;
+    }
+
+    /* Combinator: general sibling */
+    h2 ~ p {
+      font-style: italic;
+    }

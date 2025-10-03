@@ -60,6 +60,7 @@ p {
   border: 2px solid red;
   color: #1e1403;
   padding: 4rem;
+  border-radius: 2rem;
 }
 
 .section-border {

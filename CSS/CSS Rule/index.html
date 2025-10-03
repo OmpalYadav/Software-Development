@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cascade & Specificity Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <h1>Main Heading</h1>
+    <p>Direct child paragraph (red from child selector).</p>
+
+    <div class="box special">
+      <p>Paragraph inside .box.special (green from descendant selector).</p>
+    </div>
+
+    <h2>Subheading</h2>
+    <p>This paragraph is right after h2 (orange + bold).</p>
+    <p>This paragraph is after h2 but not immediate (italic due to general sibling).</p>
+
+    <p id="unique-text" style="color: pink;">This has inline style pink but !important makes it blue.</p>
+  </section>
+
+</body>
+</html>

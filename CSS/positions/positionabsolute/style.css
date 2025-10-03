@@ -32,7 +32,8 @@ body {
 #main-heading {
   color: #1e1403;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  background-color: aqua;
 }
 
 .parent-div {
@@ -65,20 +66,22 @@ body {
 /*? Actual Positions starts Here  */
 
 .parent-div {
-  position: relative;
-  /* margin-left: 200px; */
-  left: 300px;
+  position: absolute;
+  margin-left: 10px;
+  left: 2px;
 }
 
 .child {
   position: absolute;
+  left: 10rem;
 }
 
 /* top, left, bottom, right  */
 
 .child-2 {
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 102px;
+  left: 103px;
 }
 
 .child-3 {
@@ -87,13 +90,14 @@ body {
 }
 
 .child-4 {
-  bottom: 0;
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
 }
 
 .child-5 {
-  /*left: 425px;
+  left: 425px;
   top: 325px;
-  */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

@@ -87,13 +87,13 @@ img {
 }
 
 .hero-content a:visited {
-    color: rgb(0, 255, 64);
+    color: rgb(0, 202, 51);
 }
 
 .hero-content a:hover {
-    color: aqua;
+    color: rgb(255, 230, 7);
 }
 
 .hero-content a:active {
-    color: blue;
+    color: rgb(226, 34, 9);
 }
