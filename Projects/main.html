@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cascade & Specificity Example</title>
+  <style>
+    /* GLOBAL RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* ---------------- NAV ---------------- */
+    nav {
+      background: #993939;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 60px;
+      padding-left: 12rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(0, 0, 0); /* default */
+      font-weight: bold;
+    }
+
+    /* hover state */
+    nav ul li a:hover {
+      color: rgb(122, 122, 114);
+    }
+
+    /* visited state */
+    nav ul li a:visited {
+      color: rgb(16, 226, 16);
+    }
+
+    /* active state */
+    nav ul li a:active {
+      color: rgb(221, 4, 4);
+    }
+
+    /* ---------------- HERO SECTION ---------------- */
+    section.hero {
+      background: white;
+      padding: 60px;
+      text-align: center;
+      word-spacing: 0%;
+    }
+
+    section.hero h1 {
+      font-size: 36px;
+      color: #0c0c0c;
+    }
+
+    /* Grouping selector */
+    section.hero h1, section.hero p {
+      margin-bottom: 5px;
+    }
+
+    section.hero p {
+      color: rgb(24, 4, 4)
+    }
+
+    /* Child selector */
+    section.hero > p {
+      color: rgb(0, 0, 0);
+    }
+
+    /* ---------------- FEATURES ---------------- */
+    section.features {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    .feature-box {
+      background: rgb(24, 177, 228);
+      padding: 50px;
+      width: 250px;
+      border-radius: 30px;
+    }
+
+    /* Chaining selector (sirf feature-box jisme "special" bhi ho) */
+    .feature-box.special {
+      background: rgb(207, 135, 0);
+      color: rgb(65, 15, 15);
+    }
+
+    /* Descendant selector */
+    .feature-box p {
+      font-size: 14px;
+      color: black;
+    }
+
+    /* ID selector (zyada specific) */
+    #important-feature {
+      border: 2px solid red;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+    footer {
+      background: #7c3535;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* General sibling combinator */
+    h2 ~ p {
+      font-style: italic;
+    }
+
+    /* Adjacent sibling combinator */
+    h2 + p {
+      font-weight: bold;
+    }
+
+    /* Specificity battle */
+    .feature-box p {
+      color: rgb(0, 0, 0);
+    }
+    #important-feature p {
+      color: blue;
+    }
+    #important-feature p {
+      color: rgb(20, 20, 20) !important;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello</h1>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This is a hero section. (darkgreen from child selector)</p>
+    <p>Another paragraph in hero section (gray from descendant).</p>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="feature-box">
+      <h2>Feature 1</h2>
+      <p>Normal feature description.</p>
+    </div>
+    <div class="feature-box special">
+      <h2>Feature 2 (Special)</h2>
+      <p>Special feature (orange background because of chaining selector).</p>
+    </div>
+    <div class="feature-box" id="important-feature">
+      <h2>Feature 3 (Important)</h2>
+      <p>This feature text has !important → purple.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>Made with ❤️ by Student</p>
+  </footer>
+
 </body>
 </html>
