@@ -94,16 +94,77 @@ body {
 }
 
 .flex-container {
-  width: 60%;
+  width: 100%;
   height: auto;
   padding: 50px 0;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   background: linear-gradient(to right, #514a9d, #24c6dc);
   color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
 
   /* flexbox container properties */
+  .item{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    }
+  .item-1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  .item-2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(20, 8, 8)
+  }
+  .item-3{
+    width: 100px;
+    height: 100px;
+    background-color: khaki;
+  }.item-4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(148, 122, 122);
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** ------------------------------------- -->
 /**  INTERVIEW QUESTIONS IN CSS
