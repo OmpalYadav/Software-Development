@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100px;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+}
+.First{
+    background-color: red;
+}
+.Second{
+    background-color: rgb(139, 156, 125);
+}
+.Third{
+    background-color: rgb(168, 120, 120);
+}
+.Four{
+    background-color: rgb(224, 223, 223);
+
+}
