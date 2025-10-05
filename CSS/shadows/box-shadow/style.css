@@ -43,6 +43,7 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  box-shadow: 20px 20px blueviolet;
 
   /*? box shadow here  */
 }

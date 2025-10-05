@@ -70,9 +70,31 @@ grid-column-end */
 }
 
 body {
-  min-height: 100vh;
+  background-color: #09b1e4;
+  min-height: 100vh; /* full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2c3639;
+  color: white;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  gap: 10px;
+  height: 400px;
+  width: 400px;
+  background-color: rebeccapurple;
+}
+.item-1{
+  background-color: red;
+}
+.item-2{
+  background-color: black;
+}
+.item-3{
+  background-color: rgb(164, 167, 44);
+}
+.item-4{
+  background-color: yellowgreen;
 }

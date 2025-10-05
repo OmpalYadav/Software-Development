@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(65, 23, 23);
+    color: white;
+    font-size: 20px;
+}
+.container{
+    display: grid;
+    width: 800px;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1f;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.Box{
+     background-color: rgb(95, 95, 226);
+}
+
+.First{
+    grid-row: 1/4;
+    background-color: rgb(101, 218, 101);
+
+}
+.Second{
+    grid-column: 2/4;
+    background-color: rgb(109, 218, 109);
+
+}
+.Sixth{
+    grid-row: 2/4;
+    grid-column: 4/5;
+        background-color: rgb(120, 211, 120);
+}
+.Fourth{
+    background-color: yellow;
+}
+.Eighth{
+    background-color: yellow;
+}

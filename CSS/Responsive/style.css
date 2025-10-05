@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: aquamarine;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(223, 12, 12);
+} /* in real life me hum defult lete hai phone ke liye apne aap ho jaata hai ye  ise hum mobile first bolte hain*/
+@media screen and (max-width: 600px) { /* ye desktop ke liye height and width se */
+
+    .container{
+        background-color: rgb(57, 194, 29);
+    }
+} 
+@media screen and (max-width: 900px) { /* ye window ke liye  height and width se */
+    .container{
+        background-color: rgb(52, 22, 221);
+    }
+}
