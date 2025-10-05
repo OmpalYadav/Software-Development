@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.Animation{
+    background-color: rgba(255, 255, 255, 0.062);
+    border: 1px  solid rgba(255, 255, 255, 0.082);
+    font-size: 40px;
+    padding: 10px;
+    color: rgb(218, 23, 23);
+    width: 70%;
+    border-radius: 5px;
+    white-space: nowrap;
+     overflow: hidden; /* hides the text outside box */
+}
+p{
+    display: inline-block;
+    animation: Ani 10s linear infinite; /* speed adjusted */
+    position: relative;
+    animation-name: Ani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Ani {
+     0% {
+    transform: translateX(100%); /* start fully from right */
+  }
+  100% {
+    transform: translateX(-100%); /* exit fully to the left */
+  }
+}
