@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-delay: 10s;
+    animation-delay: 3s;
     animation-fill-mode: backwards;
     border-radius: 50px;
 }

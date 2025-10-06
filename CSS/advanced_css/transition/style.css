@@ -96,6 +96,12 @@ a {
   width: 200px;
   text-align: center;
   /*?TRANSITION CODE STARTS HERE*/
+  transition: all 1s ease-in;
+}
+a:hover{
+  background-color: aqua;
+  color: black;
+  border-radius: 20px;
 }
 
 /** ------------------------------------- -->
