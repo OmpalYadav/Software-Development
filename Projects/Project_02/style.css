@@ -18,11 +18,11 @@ body{
     width: 70%;
     border-radius: 5px;
     white-space: nowrap;
-     overflow: hidden; /* hides the text outside box */
+    overflow: hidden; /* hides the text outside box */
 }
 p{
     display: inline-block;
-    animation: Ani 10s linear infinite; /* speed adjusted */
+    animation: Ani 5s linear infinite; /* speed adjusted */
     position: relative;
     animation-name: Ani;
     animation-duration: 10s;
