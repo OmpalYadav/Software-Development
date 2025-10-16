@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & Transforms Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✌️ Interesting CSS Animations & Effects</h1>
+
+        <!-- PSEUDO CLASSES SECTION -->
+        <div class="section">
+            <h2>🎯 Pseudo Classes</h2>
+            <p style="margin-bottom: 1rem; color: #666;">Hover, click, and interact with elements below:</p>
+            
+            <div class="demo-grid">
+                <button class="button">Hover me!</button>
+                <button class="button">Click me!</button>
+                <button class="button" disabled>Disabled</button>
+                <button class="button">Interactive</button>
+            </div>
+
+            <div>
+                <a href="#" class="link">Link with Pseudo Elements</a>
+                <a href="#" class="link">Another Link</a>
+            </div>
+
+            <h3 style="color: #667eea; margin-top: 1.5rem; margin-bottom: 0.5rem;">Styled List (hover items):</h3>
+            <ul class="styled-list">
+                <li>First Item (First-child)</li>
+                <li>Second Item (Even)</li>
+                <li>Third Item (Odd)</li>
+                <li>Fourth Item (Even)</li>
+                <li>Last Item (Last-child)</li>
+            </ul>
+        </div>
+
+        <!-- TRANSFORMS SECTION -->
+        <div class="section">
+            <h2>🔄 CSS Transforms (Hover to see effects)</h2>
+            <p style="margin-bottom: 1rem; color: #666;">Translate, rotate, scale, and skew with transforms:</p>
+            
+            <div class="transforms-demo">
+                <div class="transform-box translate-box">Translate</div>
+                <div class="transform-box rotate-box">Rotate</div>
+                <div class="transform-box scale-box">Scale</div>
+                <div class="transform-box skew-box">Skew</div>
+                <div class="transform-box multiple-box">Multiple</div>
+            </div>
+        </div>
+
+        <!-- ANIMATIONS SECTION -->
+        <div class="section">
+            <h2>⚡ CSS Animations (@keyframes)</h2>
+            <p style="margin-bottom: 1rem; color: #666;">Automatic animations running continuously:</p>
+            
+            <div class="animation-demo">
+                <div class="animated-box slide-box">Slide In</div>
+                <div class="animated-box bounce-box">Bounce</div>
+                <div class="animated-box spin-box">Spin</div>
+                <div class="animated-box pulse-box">Pulse</div>
+                <div class="animated-box gradient-box">Gradient</div>
+            </div>
+        </div>
+
+        <!-- PSEUDO ELEMENTS SECTION -->
+        <div class="section">
+            <h2>✨ Pseudo Elements (::before, ::after, etc.)</h2>
+            
+            <div class="quote">
+                "Pseudo elements allow you to add content and styling without adding extra HTML elements!"
+            </div>
+
+            <h3 style="color: #667eea; margin-top: 1.5rem; margin-bottom: 1rem;">Form with Pseudo Elements:</h3>
+            <form>
+                <label for="name" class="label required">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email" class="label required">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password" class="label required">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+
+                <button type="submit" class="button" style="width: 100%; margin-top: 1rem;">Submit</button>
+            </form>
+        </div>
+
+        <!-- TABLE WITH STYLING -->
+        <div class="section">
+            <h2>📊 Table with Pseudo Classes (hover rows)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Structure</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Styling</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Interactivity</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Flexbox</td>
+                        <td>Layout</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Grid</td>
+                        <td>Layout</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
