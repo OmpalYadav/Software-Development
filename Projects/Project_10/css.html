@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Demo</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navigation */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        section p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        /* Highlight Class */
+        .highlight {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+            margin: 1rem 0;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #667eea;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #764ba2;
+        }
+
+        /* Color Examples */
+        .color-box {
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 1rem;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .red { background-color: #FF6B6B; }
+        .blue { background-color: #4ECDC4; }
+        .yellow { background-color: #FFE66D; color: #333; }
+        .green { background-color: #95E1D3; color: #333; }
+
+        /* Box Model Demo */
+        .box-demo {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+        }
+
+        .box-demo p {
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Units Demo */
+        .units-demo {
+            background: #f9f9f9;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .units-demo p {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            background: white;
+            border-left: 3px solid #667eea;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎨 CSS Basics Demo</h1>
+        <nav>
+            <a href="#colors">Colors</a>
+            <a href="#box">Box Model</a>
+            <a href="#units">Units</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h2>Welcome to CSS!</h2>
+            <p>This page demonstrates the CSS basics you've just learned. Click around and check out the different sections!</p>
+            <div class="highlight">
+                <strong>💡 Tip:</strong> Inspect this page with your browser's developer tools (F12) to see the CSS!
+            </div>
+        </section>
+
+        <!-- Colors Section -->
+        <section id="colors">
+            <h2>🎨 Colors in CSS</h2>
+            <p>CSS supports multiple color formats:</p>
+            
+            <div style="text-align: center;">
+                <div class="color-box red">Hex: #FF6B6B</div>
+                <div class="color-box blue">RGB: (78, 205, 196)</div>
+                <div class="color-box yellow">HSL Color</div>
+                <div class="color-box green">RGBA + Alpha</div>
+            </div>
+        </section>
+
+        <!-- Box Model Section -->
+        <section id="box">
+            <h2>📦 Box Model</h2>
+            <p>Every element in CSS is a box. Let's see how padding, margin, and borders work:</p>
+            
+            <div class="box-demo">
+                <p>This paragraph has padding (space inside), margin (space outside), and a border!</p>
+                <p>Try changing the CSS in the &lt;style&gt; tag to see how it affects the layout.</p>
+            </div>
+        </section>
+
+        <!-- Text Styling Section -->
+        <section>
+            <h2>✍️ Text Styling</h2>
+            <p style="font-size: 1.2rem; color: #667eea; font-weight: bold;">Large, bold, colored text</p>
+            <p style="font-style: italic; letter-spacing: 2px;">Italic text with letter spacing</p>
+            <p style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Text with shadow effect</p>
+            <p style="text-transform: uppercase; word-spacing: 5px;">uppercase text with word spacing</p>
+        </section>
+
+        <!-- Units Section -->
+        <section id="units">
+            <h2>📏 CSS Units</h2>
+            <p>Different units for different purposes:</p>
+            <div class="units-demo">
+                <p style="font-size: 16px;">Fixed size: 16px (pixels)</p>
+                <p style="font-size: 1.5rem;">Relative: 1.5rem (based on root)</p>
+                <p style="font-size: 1.5em;">Relative: 1.5em (based on parent)</p>
+                <p style="width: 80%; background-color: #e8f4f8;">80% of parent width</p>
+            </div>
+        </section>
+
+        <!-- CTA Button -->
+        <section style="text-align: center;">
+            <h2>Ready to Learn More?</h2>
+            <p>Next, we'll learn about Display, Flexbox, and Grid layouts!</p>
+            <button>Let's Continue! →</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSS Learning Hub | Building Beautiful Websites with CSS</p>
+    </footer>
+</body>
+</html>
