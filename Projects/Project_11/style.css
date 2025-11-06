@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: #fff;
+    background-color: #1c2325;
+}
+.two{
+    background-image: url(./0c78adde209ad8276d137f996329219b.jpg);
+    background-color: #008080;
+    color: #c4dae4;
+    border: solid 5px #3f4047;
+    width: 400px;
+    margin: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 5px solid red;
+}
+.img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.img-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
