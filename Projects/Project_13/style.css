@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.hash-tag{
+    padding: 2rem;
+    height: 200px;
+    background-color: #065FD4;
+    color: #fff;
+    background-image: url(./background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2{
+    margin: 0;
+    font-size: 4rem;
+}
+span{
+    font-size: 2rem;
+}
+.hash-tag img{
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #fff;
+    border-radius: 100%;
+}
+img{
+    margin-left: -1rem;
+}
+.img-container{
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-left: 32px;
+}
